@@ -1,4 +1,4 @@
-/* body bakgrunn */
+/* ---------------- Body, generelt ---------------- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,10 +6,10 @@ body {
     color: white;
 }
 
-/* header, regn */
+/* ---------------- Header + regn ---------------- */
 .header-container {
     position: relative;
-    height: 200px;
+    height: 200px;             /* headerhøyde */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
     color: white;
 }
 
-/* header bakgrunn */
+/* Header bakgrunn */
 .header-container .sky {
     position: absolute;
     width: 100%;
@@ -28,7 +28,7 @@ body {
     z-index: -1;
 }
 
-/* regn animasjon kun header */
+/* regn innen header */
 .header-container .rain {
     position: absolute;
     width: 100%;
@@ -40,6 +40,7 @@ body {
     z-index: -1;
 }
 
+/* regndråper */
 .header-container .drop {
     position: absolute;
     width: 2px;
@@ -67,9 +68,12 @@ ul {
 li {
     margin: 5px 0;
 }
+
 ul ul {
     margin-left: 20px;
 }
+
+/* lenker */
 a {
     text-decoration: none;
     color: lightblue;
@@ -77,7 +81,58 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* ---------------- hovedmeny, dropdowns ---------------- */
 .overskrift {
+    position: relative;
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 1.4em;
     font-weight: bold;
-    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+/* undermenyer */
+.overskrift ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(52, 73, 94, 0.95);
+    padding: 10px 15px;
+    border-radius: 6px;
+    min-width: 180px;
+    z-index: 10;
+}
+
+/* viser undermeny ved å holde over */
+.overskrift:hover ul {
+    display: block;
+}
+
+/* dropdown meny */
+.overskrift ul li {
+    margin: 8px 0;
+}
+
+/* dropdown meny lenker */
+.overskrift ul li a {
+    color: lightblue;
+    text-decoration: none;
+}
+.overskrift ul li a:hover {
+    text-decoration: underline;
+}
+/* dropdown regndråper */
+.overskrift::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    margin-left: 6px;
+    background: lightblue;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
 }
