@@ -2,36 +2,18 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-	<link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="stil.css">
     <title>Prosjektnettside</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            margin: 5px 0;
-        }
-        ul ul {
-            margin-left: 20px; /* innrykk for underpunkter */
-        }
-        a {
-            text-decoration: none;
-            color: darkblue;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .overskrift {
-            font-weight: bold;
-            margin-top: 10px;
-        }
-    </style>
 </head>
 <body>
+    <!-- header -->
+    <div class="header-container">
+        <div class="sky"></div>
+        <div class="rain"></div>
+        <h1>Regnbyen Bergen</h1>
+    </div>
+
+    <!-- liste med lenk -->
     <nav>
         <ul>
             <li class="overskrift">Hjem</li>
@@ -61,5 +43,18 @@
             </ul>
         </ul>
     </nav>
+
+    <!-- javascript, regn -->
+    <script>
+        const rain = document.querySelector('.header-container .rain');
+        for (let i = 0; i < 80; i++) { // fewe	r drops since only header
+            const drop = document.createElement('div');
+            drop.classList.add('drop');
+            drop.style.left = Math.random() * 100 + '%';
+            drop.style.animationDuration = 0.5 + Math.random() * 0.7 + 's';
+            drop.style.animationDelay = Math.random() * 5 + 's';
+            rain.appendChild(drop);
+        }
+    </script>
 </body>
 </html>

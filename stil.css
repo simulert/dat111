@@ -1,1 +1,83 @@
-* { color: black; background-color: lightblue; }
+/* body bakgrunn */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #3d566e;
+    color: white;
+}
+
+/* header, regn */
+.header-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* header bakgrunn */
+.header-container .sky {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #2c3e50, #34495e, #2c3e50);
+    z-index: -1;
+}
+
+/* regn animasjon kun header */
+.header-container .rain {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.header-container .drop {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.6);
+    bottom: 100%;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(220px);
+    }
+}
+
+nav {
+    margin-left: 40px;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+li {
+    margin: 5px 0;
+}
+ul ul {
+    margin-left: 20px;
+}
+a {
+    text-decoration: none;
+    color: lightblue;
+}
+a:hover {
+    text-decoration: underline;
+}
+.overskrift {
+    font-weight: bold;
+    margin-top: 10px;
+}
