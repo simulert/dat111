@@ -1,14 +1,15 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="stil.css">
-	<title>tab2</title>
+	<title>Prosjektmedlemmer</title>
 </head>
 <body>
 	<header>
-		<div class="header-container">
+	<div class="header-container">
         <div class="sky"></div>
+        <div class="rain"></div>
         <h1>Prosjektmedlemmer</h1>
     </div>
 
@@ -45,43 +46,68 @@
         </li>
     </ul>
 </nav>
+
+<script>
+        const rain = document.querySelector('.header-container .rain');
+        for (let i = 0; i < 80; i++) { // fewe	r drops since only header
+            const drop = document.createElement('div');
+            drop.classList.add('drop');
+            drop.style.left = Math.random() * 100 + '%';
+            drop.style.animationDuration = 0.5 + Math.random() * 0.7 + 's';
+            drop.style.animationDelay = Math.random() * 5 + 's';
+            rain.appendChild(drop);
+        }
+    </script>
 			
 	</header>
 
 	<main>
         <div class="box-container">
+
+        <a href="Prosjektmedlemmer/gunnar.html">
         <div class="box">
             <h2>Gunnar</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nesciunt beatae maxime ut nostrum cupiditate amet, nihil quasi totam alias labore, distinctio esse dignissimos, nam aut fuga incidunt officia eaque.</p>
-        </div>
-        <div class="box">
-            <h2>Elias</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nesciunt beatae maxime ut nostrum cupiditate amet, nihil quasi totam alias labore, distinctio esse dignissimos, nam aut fuga incidunt officia eaque.</p>
-        </div>
-        <a href="Prosjektmedlemmer/endre.html">
-        <div class="box">
-            <h2>Endre</h2>
-            <p>Prosjektmedlem</p>
-            <img src="Prosjektmedlemmer/Bilder/Endre.png">
+            <p>Prosjektleder</p>
         </div>
         </a>
+
+        <a href="Prosjektmedlemmer/elias.html">
+        <div class="box">
+            <h2>Elias</h2>
+            <p>Prosjektmedlem</p>
+        </div>
+        </a>
+
+        <a href="Prosjektmedlemmer/endre.html">
+        <div class="box" style="background-image: url('Prosjektmedlemmer/Bilder/Endre.png');">
+            <h2>Endre</h2>
+            <p>Prosjektmedlem</p>
+        </div>
+        </a>
+
+        <a href="Prosjektmedlemmer/are.html">
         <div class="box">
             <h2>Are</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nesciunt beatae maxime ut nostrum cupiditate amet, nihil quasi totam alias labore, distinctio esse dignissimos, nam aut fuga incidunt officia eaque.</p>
+            <p>Prosjektmedlem</p>
         </div>
+        </a>
+        
+        <a href="Prosjektmedlemmer/eirik.html">
         <div class="box">
             <h2>Eirik</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nesciunt beatae maxime ut nostrum cupiditate amet, nihil quasi totam alias labore, distinctio esse dignissimos, nam aut fuga incidunt officia eaque.</p>
+            <p>Prosjektmedlem</p>
         </div>
+        </a>
+
         </div>
-
-
 	</main>
 
 	<footer>
+        <div class="header-container">
+        <div class="sky"></div>
+        </div>
 			
 	</footer>
-
 
 </body>
 </html>
