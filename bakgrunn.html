@@ -1,10 +1,85 @@
 <!doctype html>
 <html>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="stil.css">
-	<title>tab2</title>
+<style>
+    main {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: linear-gradient(to bottom, #2c3e50, #34495e, #2c3e50);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        font-size: 18px;
+    }
+</style>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stil.css">
+<title>Bakgrunn</title>
+<!-- header -->
+<div class="header-container">
+    <div class="sky"></div>
+    <div class="rain"></div>
+    <h1>Regnbyen Bergen</h1>
+</div>
+
+<!-- liste med lenke -->
+<nav>
+    <ul>
+        <li class="overskrift">Hjem
+            <ul>
+                <li><a href="kort-introduksjon.html">Kort introduksjon til RB</a></li>
+                <li><a href="hoydepunkter.html">Høydepunkter</a></li>
+            </ul>
+        </li>
+
+        <li class="overskrift">Om prosjektet
+            <ul>
+                <li><a href="mal.html">Mål</a></li>
+                <li><a href="prosjektbeskrivelse.html">Prosjektbeskrivelse</a></li>
+                <li><a href="bakgrunn.html">Bakgrunn</a></li>
+            </ul>
+        </li>
+
+        <li class="overskrift">Resultat
+            <ul>
+                <li><a href="brh1.html">BRH-1 side</a></li>
+                <li><a href="brh2.html">BRH-2 side</a></li>
+                <li><a href="brh3.html">BRH-3 side</a></li>
+            </ul>
+        </li>
+
+        <li class="overskrift">Kontakt
+            <ul>
+                <li><a href="prosjektmedlemmer.html">Prosjektmedlemmer</a></li>
+                <li><a href="kontaktinformasjon.html">Kontaktinformasjon</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<!-- javascript, regn -->
+<script>
+    const rain = document.querySelector('.header-container .rain');
+    for (let i = 0; i < 80; i++) { // fewe	r drops since only header
+        const drop = document.createElement('div');
+        drop.classList.add('drop');
+        drop.style.left = Math.random() * 100 + '%';
+        drop.style.animationDuration = 0.5 + Math.random() * 0.7 + 's';
+        drop.style.animationDelay = Math.random() * 5 + 's';
+        rain.appendChild(drop);
+    }
+</script>
+
 <head>
 <body>
+<main>
+    <h1>Bakgrunn
+        <p>Bergen med sitt kystklima blir av mange sett på som en av de mest regnfulle byene i Europa med mange regnværsdager i året. Kystklimaet i Bergen er en viktig del av identiteten og kulturen til mange bergensere. Prosjektet RB AS er dannet på bakgrunn av nettopp “regnbyen” Bergen.
+
+</main>
+
 </html>
-</head>
-</body>
