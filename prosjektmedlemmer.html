@@ -1,10 +1,113 @@
 <!doctype html>
 <html>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="stil.css">
-	<title>tab2</title>
 <head>
-<body>
-</html>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="stil.css">
+	<title>Prosjektmedlemmer</title>
 </head>
+<body>
+	<header>
+	<div class="header-container">
+        <div class="sky"></div>
+        <div class="rain"></div>
+        <h1>Prosjektmedlemmer</h1>
+    </div>
+
+	<nav>
+    <ul>
+        <li class="overskrift">Hjem
+            <ul>
+                <li><a href="kort-introduksjon.html">Kort introduksjon til RB</a></li>
+                <li><a href="hoydepunkter.html">Høydepunkter</a></li>
+            </ul>
+        </li>
+
+        <li class="overskrift">Om prosjektet
+            <ul>
+                <li><a href="mal.html">Mål</a></li>
+                <li><a href="prosjektbeskrivelse.html">Prosjektbeskrivelse</a></li>
+                <li><a href="bakgrunn.html">Bakgrunn</a></li>
+            </ul>
+        </li>
+
+        <li class="overskrift">Resultat
+            <ul>
+                <li><a href="brh1.html">BRH-1 side</a></li>
+                <li><a href="brh2.html">BRH-2 side</a></li>
+                <li><a href="brh3.html">BRH-3 side</a></li>
+            </ul>
+        </li>
+
+        <li class="overskrift">Kontakt
+            <ul>
+                <li><a href="prosjektmedlemmer.html">Prosjektmedlemmer</a></li>
+                <li><a href="kontaktinformasjon.html">Kontaktinformasjon</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<script>
+        const rain = document.querySelector('.header-container .rain');
+        for (let i = 0; i < 80; i++) { // fewe	r drops since only header
+            const drop = document.createElement('div');
+            drop.classList.add('drop');
+            drop.style.left = Math.random() * 100 + '%';
+            drop.style.animationDuration = 0.5 + Math.random() * 0.7 + 's';
+            drop.style.animationDelay = Math.random() * 5 + 's';
+            rain.appendChild(drop);
+        }
+    </script>
+			
+	</header>
+
+	<main>
+        <div class="box-container">
+
+        <a href="Prosjektmedlemmer/gunnar.html">
+        <div class="box">
+            <h2>Gunnar</h2>
+            <p>Prosjektleder</p>
+        </div>
+        </a>
+
+        <a href="Prosjektmedlemmer/elias.html">
+        <div class="box">
+            <h2>Elias</h2>
+            <p>Prosjektmedlem</p>
+        </div>
+        </a>
+
+        <a href="Prosjektmedlemmer/endre.html">
+        <div class="box" style="background-image: url('Prosjektmedlemmer/Bilder/Endre.png');">
+            <h2>Endre</h2>
+            <p>Prosjektmedlem</p>
+        </div>
+        </a>
+
+        <a href="Prosjektmedlemmer/are.html">
+        <div class="box">
+            <h2>Are</h2>
+            <p>Prosjektmedlem</p>
+        </div>
+        </a>
+        
+        <a href="Prosjektmedlemmer/eirik.html">
+        <div class="box">
+            <h2>Eirik</h2>
+            <p>Prosjektmedlem</p>
+        </div>
+        </a>
+
+        </div>
+	</main>
+
+	<footer>
+        <div class="header-container">
+        <div class="sky"></div>
+        </div>
+			
+	</footer>
+
 </body>
+</html>
