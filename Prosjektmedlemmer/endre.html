@@ -3,19 +3,83 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="endre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<title>tab2</title>
 </head>
 <body>
-    <header>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nobis labore iusto molestias vero veritatis. Sapiente dolorem ipsum soluta consequuntur maiores ex incidunt laborum officiis quaerat minima? Maiores, modi! Iste?</p>
+    <header>  
+        <div class="header-container">
+        <h1>Endre Tysnes</h1>
+        <h3>Prosjektmedlem</h3>
+        
+        <div class="dropdown">
+            <button>Tilbake til</button>
+            <nav class="content">
+                <a href="../hovedside.html">Hjem</a>
+                <a href="../prosjektmedlemmer.html">Prosjektmedlemmer</a>
+            </nav>
+        </div>
+        </div>
     </header>
 
     <main>
+        <div class="box-container" > 
+        <div id="bilde-box" class="box" style="background-image: url('Bilder/Endre.png');">
+            
+        </div>
+
+        <div class="box" id="box2">
+            <h2>Regn - en del av hverdagen</h2>
+            <p>Hei, jeg heter Endre, er 21 år og kommer fra Bergen.
+               Byen som er kjent for sine vakre fjell og ikke minst regnet.
+               Det sies at det regner nesten hele tiden her, og det stemmer nesten.
+               Men for oss Bergensere er det en del av sjarmen. Husk, alltid ta med paraply! 
+            </p>
+            <div>
+                <h2>Typer regn i Bergen</h2>
+                <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Beskrivelse</th>
+                    <th>Rating</th>
+                </tr>
+                <tr>
+                    <td>Yr</td>
+                    <td>Det stille, snikende regnet som gjøre deg klissvåt uten at du merker det</td>
+                    <td>8/10</td>
+                </tr>
+                <tr>
+                    <td>Kraftig regn</td>
+                    <td>Klasikker. Vann overalt. Du gir opp</td>
+                    <td>2/10</td>
+                </tr>
+                <tr>
+                    <td>Sidevies regn</td>
+                    <td>Når det blåser så mye at man tror det regner oppover</td>
+                    <td>5/10</td>
+                </tr>
+                
+                </table>
+            </div>
+
+        </div>
+
+        </div>
 
     </main>
 
     <footer>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem quos laborum consequatur odit nemo beatae? Ullam, maxime repellendus aperiam inventore omnis iusto quo debitis vero rem quidem, corporis aliquam.</p>
+    <div class="lenker">
+        <a href="https://www.yr.no/nb/værvarsel/daglig-tabell/1-92416/Norge/Vestland/Bergen/Bergen" target="_blank" aria-label="Yr">
+            <i class="fas fa-cloud-showers-heavy"></i>
+        </a>
+        <a href="https://www.visitbergen.com" target="_blank" aria-label="Visit-Bergen">
+            <i class="fas fa-map-marked-alt"></i>
+        </a>
+        <a href="https://no.wikipedia.org/wiki/Bergen" target="_blank" aria-label="Wikipedia">
+            <i class="fab fa-wikipedia-w"></i>
+        </a>
+    </div>
     </footer>
 
 </body>
