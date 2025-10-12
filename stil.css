@@ -5,7 +5,6 @@ body {
     background: #3d566e;
     color: white;
 }
-
 /* ---------------- Header + regn ---------------- */
 .header-container {
     position: relative;
@@ -137,7 +136,7 @@ a:hover {
     transition: transform 0.3s ease;
 }
 /* prosjektmedlemmer bokser*/
-.box-container{
+.prosjektmedlemmer .box-container{
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -145,7 +144,7 @@ a:hover {
     padding: 20px;
     box-sizing: border-box;
 }
-.box{
+.prosjektmedlemmer .box{
     border: 2px solid white;
     border-radius: 20px;
     width: 200px;
@@ -160,7 +159,7 @@ a:hover {
     transition: transform 0.3s ease;
     color:white; 
 }
-.box:hover{
+.prosjektmedlemmer .box:hover{
     transform: scale(1.1);
     box-shadow: 0px 4px 7px, 0px -4px 7px;
     text-shadow: 0 0 10px #2c3e50;
