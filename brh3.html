@@ -64,24 +64,26 @@
     </script>
      </header>
 
-    <h1>Biler som tåler regnvær best</h1>
-    <ul>
-        <li>Subaru Outback</li>
-        <li>Audi Q5</li>
-        <li>Volvo XC90</li>
-        <li>Mercedes-Benz GLE</li>
-        <li>Toyota RAV4</li>
-        <li>Honda CR-V</li>
+    <h1 class="bilerRegnvær">Biler som tåler regnvær best</h1>
+    <ul class="bilerRegnvær">
+        <li>-Subaru Outback</li>
+        <li>-Audi Q5</li>
+        <li>-Volvo XC90</li>
+        <li>-Mercedes-Benz GLE</li>
+        <li>-Toyota RAV4</li>
+        <li>-Honda CR-V</li>
     </ul>
 
     <a href="https://www.subaru.no/" target="_blank">
-    <img src="Subaru.png"/>
+    <img class="subaruKlasse" src="Prosjektmedlemmer/Bilder/Subaru.png"/>
     </a>
 
+	<div class="bilerRegnvær">
     <h2>Sjekk om det finnes bilverksted i din bydel</h2>
     <label for="bydel">Skriv inn bydelnummer:</label>
     <input type="text" id="bydel" placeholder="f.eks. 5221">
     <button onclick="finnVerksted()">Finn verksted</button>
+	</div>
 
     <p id="resultat"></p>
     
@@ -159,6 +161,8 @@
                 resultat.textContent = "Beklager, vi har ingen data for dette bydelnummeret.";
             }
         }
+		
+
         </script>
     </body>
 </html>
