@@ -4,10 +4,59 @@
 	<link rel="stylesheet" href="stil.css">
 	<title>tab2</title>
 <head>
-
-
-	
-<body>
-</html>
 </head>
+<body>
+    <img src="RBB_Logo.png" style="width:80px; height:100px;"><!--tittel-->
+    
+    <button onclick="toggleMeny()">☰ Meny</button><!--knapp når trykkes starter funksjonen til menyen-->
+    
+    <div id="meny" style="display:none;"><!--lager menyen med innhold, og viser ikke innholdet-->
+        <ul>
+            <li><a href="">Hjem</a></li>
+            <li><a href="">Om oss</a></li>
+            <li><a href="">BRH2</a></li>
+            <li><a href="">BRH3</a></li>
+        </ul>
+    </div>
+    <h1>Regnbyen Bergen</h1>
+    <h2>Kort om hvorfor vi lagde RBB:</h2>    <!--tekst-->
+    <p>Bergen er kjent for sitt kystklima og mange regnværsdager, noe som preger både byens identitet og kultur. Prosjektet RBB ble startet for å formidle hvordan man best kan håndtere regn og vær i Bergen. Målet er å gjøre det enklere for folk å holde seg informert om klimaet og å øke kunnskapen om hvordan man kan leve i harmoni med regnet. Nettsiden vår skal samle informasjon om “regnbyen” Bergen og fungere som en nyttig ressurs for både innbyggere og besøkende.</p>
+
+    <h2>Høydepunkter:</h2>   
+        <div><strong>Idag:</strong>
+            <div>9:00 - 40% jakker på Antonsport ut uka</div>
+            <div>11:10 - Bilkræsj på E6</div>
+            <div>14:47 - Ny væroppdatering</div>
+        </div>
+        <div><strong>Igår:</strong>
+            <div>12:30 Vannivået stiger</div>
+        </div>
+        <div><strong>Torsdag 30.august:</strong>
+            <div>Ingen nyheter</div>
+        </div>
+        <div><strong>Onsdag 29.august:</strong>
+            <div>9:20 Mye nedbør ved Nordnes</div>
+            <div>11:17 3 for 2 på paraplyer på XXL</div>
+        </div>
+    
+
+
+    <h2>Kontakt oss</h2>    <!--overskrift-->
+    <p><strong>Adresse:</strong> Bergenveien 1, 5555 Bergen</p> <!--strong gir det en tjukk tekst-->
+    <p><strong>Telefon:</strong> +47 10 20 30 40</p>
+    <p><strong>E-post:</strong> <a href="mailto:RBBmail@gmail.com">RBBmail@gmail.com</a></p>    <!--åpner mail for å sende til mailen-->
+    <p><strong>Åpningstider:</strong> Man–Fre: 09:00–17:00</p>
+
+<script>
+    function toggleMeny() { //funksjonen sitt navn
+        const meny = document.getElementById("meny"); //lager en variabel som ikke kan endres senere, som henter meny
+    
+        if (meny.style.display === "none") { //hvis menyen er skjult
+             meny.style.display = "block";  //viser menyen
+        } else {
+            meny.style.display = "none";    //vis menyen hvises og man trykker på knappen igjen så lukkes den
+        }
+    }
+</script>
 </body>
+</html>
