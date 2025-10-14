@@ -276,21 +276,21 @@ a:hover {
     left:10px;
 }
 .stormbergKlasse{
-    height: 400px;
+    height: 380px;
     width: auto;
     margin:10px;
     transition: transform 0.5s ease-in-out;
     animation: pulse 1s infinite alternate;
 }
 .luftrenserKlasse{
-    height: 400px;
+    height: 380px;
     width: auto;
     margin:10px;
     transition: transform 0.5s ease-in-out;
     animation: pulse 1s infinite alternate;
 }
 .drygolinKlasse{
-    height: 400px;
+    height: 380px;
     width: auto;
     margin:10px;
     transition: transform 0.5s ease-in-out;
