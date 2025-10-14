@@ -313,11 +313,16 @@ a:hover {
     padding: 20px;
 }
 .hovedside-box{
-    border: solid white;
     padding: 40px;
     width: 40%;
     height: 500px;
 }
 .hovedside-box h1, p{
-    text-shadow: 3px 3px 6px #3d566e, -2px -2px 5px #3d566e;
+    text-shadow: 3px 3px 6px #2c3e50, -2px -2px 5px #2c3e50;
+}
+.hovedside-box p{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
