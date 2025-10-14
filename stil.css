@@ -275,3 +275,37 @@ a:hover {
     position:relative;
     left:10px;
 }
+.stormbergKlasse{
+    height: 400px;
+    width: auto;
+    margin:10px;
+    transition: transform 0.5s ease-in-out;
+    animation: pulse 1s infinite alternate;
+}
+.luftrenserKlasse{
+    height: 400px;
+    width: auto;
+    margin:10px;
+    transition: transform 0.5s ease-in-out;
+    animation: pulse 1s infinite alternate;
+}
+.drygolinKlasse{
+    height: 400px;
+    width: auto;
+    margin:10px;
+    transition: transform 0.5s ease-in-out;
+    animation: pulse 1s infinite alternate;
+}
+.brhTekst{
+    margin:10px;
+    position:relative;
+    left:10px;
+    margin-bottom: 20px;
+}
+.utstyrTabell{
+    margin-bottom:30px;
+    border:solid 5px white;
+}
+.utstyrTabell th, td{
+    border:solid 2px white;
+}
