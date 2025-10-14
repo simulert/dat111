@@ -1,133 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="no">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Om meg</title>
-  <link rel="stylesheet" href="stil.css">
-  <style>
-    body {
-      font-family: "Times New Roman", serif;
-      margin: 20px;
-      background-color: #f4f4f4;
-    }
-
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-items: flex-start;
-    }
-
-    .left {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .left img {
-      width: 220px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    .right {
-      max-width: 600px;
-    }
-
-    h1 {
-      font-size: 40px;
-      color: #003366;
-    }
-
-    p {
-      font-size: 20px;
-      line-height: 1.6;
-    }
-
-    table {
-      border-collapse: collapse;
-      margin-top: 20px;
-      width: 100%;
-    }
-
-    th, td {
-      border: 1px solid #888;
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #ddd;
-    }
-
-    a {
-      color: #003366;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="elias.css">
+  <title>Elias</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <a href="index.html">Tilbake til hovedsiden</a>
-    </nav>
+    <div class="header-container">
+      <h1>Elias</h1>
+      <h3>Prosjektmedlem</h3>
+
+      <div class="dropdown">
+        <button>Tilbake til</button>
+        <nav class="content">
+          <a href="../hovedside.html">Hjem</a>
+          <a href="../prosjektmedlemmer.html">Prosjektmedlemmer</a>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <main>
-    <div class="container">
-      <div class="left">
-        <img src="bilder/meg1.jpg" alt="Bilde av meg">
-      </div>
+    <div class="box-container">
+      <div id="bilde-box" class="box" style="background-image: url('bilder/meg1.jpg');"></div>
 
-      <div class="right">
-        <h1>Om meg</h1>
-        <p>
-          Mitt navn er Elias, og jeg studerer IT ved HVL. 
-          Jeg liker filmer og er glad i å lage mat.
-        </p>
-        <p>
-          På fritiden lager jeg musikk, og spiller fotball.
-        </p>
+      <div class="box" id="tekst-box">
+        <h2>Om meg</h2>
+        <p>Hei, jeg heter Elias og studerer IT ved HVL. Jeg liker filmer, matlaging og å lage musikk. 
+           På fritiden spiller jeg også fotball og liker å lære nye ting om teknologi.</p>
 
         <h2>Mine favoritter</h2>
         <table>
-          <thead>
-            <tr>
-              <th>Favoritt</th>
-              <th>Ting</th>
-              <th>Hvorfor</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Film</td>
-              <td>Inception</td>
-              <td>Utrolig kreativ historie og musikk</td>
-            </tr>
-            <tr>
-              <td>Musikk</td>
-              <td>Hip hop</td>
-              <td>Mye å velge mellom og kan være veldig forskjellig</td>
-            </tr>
-            <tr>
-              <td>Mat</td>
-              <td>Hamburger</td>
-              <td>Fordi man aldri blir lei</td>
-            </tr>
-          </tbody>
+          <tr>
+            <th>Favoritt</th>
+            <th>Ting</th>
+            <th>Hvorfor</th>
+          </tr>
+          <tr>
+            <td>Film</td>
+            <td>Inception</td>
+            <td>Utrolig kreativ historie og musikk</td>
+          </tr>
+          <tr>
+            <td>Musikk</td>
+            <td>Hip hop</td>
+            <td>Veldig mye forskjellig</td>
+          </tr>
+          <tr>
+            <td>Mat</td>
+            <td>Hamburger</td>
+            <td>Fordi man aldri blir lei</td>
+          </tr>
         </table>
       </div>
     </div>
   </main>
 
-  <footer style="margin-top: 40px;">
-    <p><a href="index.html">Tilbake til hovedsiden</a></p>
+  <footer>
+    <p>© 2025 Elias – <a href="../hovedside.html">Tilbake til hovedsiden</a></p>
   </footer>
 </body>
 </html>
