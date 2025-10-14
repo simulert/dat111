@@ -5,6 +5,93 @@
 	<title>tab2</title>
 <head>
 <body>
-</html>
-</head>
+    <img src="RBB_Logo.png" style="width:80px; height:100px;"><!--tittel-->
+    
+    <button onclick="toggleMeny()">☰ Meny</button><!--knapp når trykkes starter funksjonen til menyen-->
+    
+    <div id="meny" style="display:none;"><!--lager menyen med innhold, og viser ikke innholdet-->
+        <ul>
+            <li><a href="">Hjem</a></li>
+            <li><a href="">Om oss</a></li>
+            <li><a href="">BRH2</a></li>
+            <li><a href="">BRH3</a></li>
+        </ul>
+    </div>
+
+    <h2>Områder med mest regn:</h2>
+    <h3>Område 1:</h3>
+        <p>I dag viser målingene at området Muleelven har fått 15,2 mm nedbør — det høyeste av alle stasjonene i Bergen. Dette plasserer Muleelven som det våteste området for dagen, med en klar margin over de øvrige stasjonene.</p>
+    <h3>Område 2:</h3>
+        <p>Til sammenligning er det målt 11,7 mm i Fløistuen. </p>
+
+    <div class="kart">InteraktivtKart</div>
+
+    <h2>Anbefalt utstyr</h2>
+  <table>
+    <tr>
+      <th>Maling</th>
+      <th>Soppfjerner</th>
+      <th>Luftfukter</th>
+    </tr>
+    <tr>
+      <td>1.Jotun Drygolin Nordic Extreme</td>
+      <td>1.Nordsjø orignak sopp og algemiddel</td>
+      <td>1.Levoit Classic 300S Smart Hybrid</td>
+    </tr>
+    <tr>
+      <td>2.Flugger Facade Resist</td>
+      <td>2.Soppstopp</td>
+      <td>2.Clash ohlson Luftfukter med kald damp</td>
+    </tr>
+    <tr>
+      <td>3.Butinox Futura</td>
+      <td>3.Torrbollen Mega</td>
+      <td>3.Apt Ultrasonic kjølig luftfukter</td>
+    </tr>
+    <tr>
+      <td>4.Baron Ultra</td>
+      <td>4.Flugger Flure sot og nikotinrens</td>
+      <td>4.Andersson HRL-M2000</td>
+    </tr>
+  </table>
+
+    <a href="https://www.stormberg.com/no?utm_source=google&utm_medium=cpc&utm_campaign=Stormberg_Search_Brand&utm_agid=135126335896&utm_term=stormberg&creative=682676827371&device=c&placement=&gad_source=1&gad_campaignid=16624341329&gbraid=0AAAAAD6itpDVVX5LChtn7Io6uRuArNj8w&gclid=Cj0KCQjwo63HBhCKARIsAHOHV_V0e6O0vzaWbkt9DxRIgISmdzbtYgXPbr-m6W8ZiYk9pSlOLGdD8gIaAggXEALw_wcB" target="_blank">
+    <img src="Prosjektmedlemmer/Bilder/StormbergReklame.jpg"/>
+    </a>
+    <a href="https://www.jotun.com/no-no/decorative/exterior/dette-er-drygolin" target="_blank">
+    <img src="Prosjektmedlemmer/Bilder/Drygolin.png"/>
+    </a>
+    <a href="https://www.komplett.no/product/1213205/hjem-fritid/klima-varme/luftrensere/mill-silent-pro-luftrenser" target="_blank">
+    <img src="Prosjektmedlemmer/Bilder/Luftrenser.png"/>
+    </a>
+
+    <h2>Tips til vedlikehold/hvordan bruke utstyr nevnt over mest effektivt</h2>
+        <p>For best resultat bør maling påføres på rengjort underlag, og pensler renses umiddelbart etter bruk. Luftfuktere fungerer mest effektivt når vannet skiftes daglig og apparatet rengjøres jevnlig. Soppfjerner bør brukes i anbefalt mengde, med tilstrekkelig kontaktid og god ventilasjon. Oppbevar alltid produkter tørt og i romtemperatur for å bevare kvaliteten. Regelmessig vedlikehold og korrekt bruk forlenger levetiden til både utstyr og materialer. Små rutiner gir store gevinster i både effekt og holdbarhet.</p>
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/1VK5GLMX0rA" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+
+
+    <footer>
+    <h2>Kontakt oss</h2>
+    <p><strong>Adresse:</strong> Bergenveien 1, 5555 Bergen</p>
+    <p><strong>Telefon:</strong> +47 10 20 30 40</p>
+    <p><strong>E-post:</strong> <a href="mailto:RBBmail@gmail.com">RBBmail@gmail.com</a></p>
+    <p><strong>Åpningstider:</strong> Man–Fre: 09:00–17:00</p>
+    </footer>
+<script>
+    function toggleMeny() { //funksjonen sitt navn
+        var meny = document.getElementById("meny"); //lager en variabel som ikke kan endres senere, som henter meny
+    
+        if (meny.style.display === "none") { //hvis menyen er skjult
+             meny.style.display = "block";  //viser menyen
+        } else {
+            meny.style.display = "none";    //vis menyen hvises og man trykker på knappen igjen så lukkes den
+        }
+    }
+</script>
 </body>
+</html>
