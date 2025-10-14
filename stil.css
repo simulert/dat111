@@ -24,7 +24,10 @@ body {
 }
 .header-container img{
     position: absolute;
-    left:100px;
+    left: 100px;
+    bottom: 10px;
+    height: 150px;
+    width: auto;
 }
 
 /* Header bakgrunn */
