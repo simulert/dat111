@@ -22,6 +22,10 @@ body {
     align-items: center;
     color: white;
 }
+.header-container img{
+    position: absolute;
+    left:100px;
+}
 
 /* Header bakgrunn */
 .header-container .sky {
