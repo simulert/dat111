@@ -5,6 +5,82 @@
 	<title>tab2</title>
 <head>
 <body>
+        <img src="RBB_Logo.png" style="width:80px; height:100px;"><!--tittel-->
+    
+    <button onclick="toggleMeny()">☰ Meny</button><!--knapp når trykkes starter funksjonen til menyen-->
+    
+    <div id="meny" style="display:none;"><!--lager menyen med innhold, og viser ikke innholdet-->
+        <ul>
+            <li><a href="">Hjem</a></li>
+            <li><a href="">Om oss</a></li>
+            <li><a href="">BRH2</a></li>
+            <li><a href="">BRH3</a></li>
+        </ul>
+    </div>
+
+    <h1>Biler som tåler regnvær best</h1>
+    <ul>
+        <li>Subaru Outback</li>
+        <li>Audi Q5</li>
+        <li>Volvo XC90</li>
+        <li>Mercedes-Benz GLE</li>
+        <li>Toyota RAV4</li>
+        <li>Honda CR-V</li>
+    </ul>
+
+    <a href="https://www.subaru.no/" target="_blank">
+    <img src="Subaru.png"/>
+    </a>
+
+    <h2>Sjekk om det finnes bilverksted i din bydel</h2>
+    <label for="bydel">Skriv inn bydelnummer:</label>
+    <input type="text" id="bydel" placeholder="f.eks. 5221">
+    <button onclick="finnVerksted()">Finn verksted</button>
+
+    <p id="resultat"></p>
+    
+        <!---->
+
+         <footer>
+    <h2>Kontakt oss</h2>
+    <p><strong>Adresse:</strong> Bergenveien 1, 5555 Bergen</p>
+    <p><strong>Telefon:</strong> +47 10 20 30 40</p>
+    <p><strong>E-post:</strong> <a href="mailto:RBBmail@gmail.com">RBBmail@gmail.com</a></p>
+    <p><strong>Åpningstider:</strong> Man–Fre: 09:00–17:00</p>
+    </footer>
+        <script>
+
+            function toggleMeny() { //funksjonen sitt navn
+        var meny = document.getElementById("meny"); //lager en variabel som ikke kan endres senere, som henter meny
+    
+        if (meny.style.display === "none") { //hvis menyen er skjult
+             meny.style.display = "block";  //viser menyen
+        } else {
+            meny.style.display = "none";    //vis menyen hvises og man trykker på knappen igjen så lukkes den
+        }
+    }
+        var verksteder = {
+            "5221": {navn: "Møller bil Nesttun", adresse: "Sanddalsvegen 1, Bergen"},
+            "5068": {navn: "Møller bil Minde", adresse: "Kanalveien 3, Bergen"},
+            "5116": {navn: "Snap Drive Åsane", adresse: "Åsamyrane 78, Bergen"},
+            "5042": {navn: "Bosch Car service - Hegreneset bil", adresse: "Hegrenesveien 15b, Bergen"},
+            "5173": {navn: "Autotjenester", adresse: "Haakonsvernveien 61, Bergen"},
+            "5008": {navn: "Snap Drive Sentrum", adresse: "Agnes Mowinckels gate 6, Bergen"},
+            "5009": {navn: "Fixbil Møllendalsveien", adresse: "Møllendalsveien 17, Bergen"},
+            "5154": {navn: "Endres verksted", adresse: "Endreveien 123, Bergen"},
+            "5105": {navn: "Eidsvåg Auto", adresse: "Eidsvågbakken 21, Bergen"}
+        };
+        function finnVerksted() {
+            var bydel = document.getElementById("bydel").value.trim();
+            var resultat = document.getElementById("resultat");
+
+            if (verksteder[bydel]) {
+                resultat.textContent = "Det nærmeste verkstedet for bydel " + bydel + " er " +
+                    verksteder[bydel].navn + " på adressen: " + verksteder[bydel].adresse;
+            } else {
+                resultat.textContent = "Beklager, vi har ingen data for dette bydelnummeret.";
+            }
+        }
+        </script>
+    </body>
 </html>
-</head>
-</body>
