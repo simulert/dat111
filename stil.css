@@ -309,3 +309,15 @@ a:hover {
 .utstyrTabell th, td{
     border:solid 2px white;
 }
+.hovedside-container{
+    padding: 20px;
+}
+.hovedside-box{
+    border: solid white;
+    padding: 40px;
+    width: 40%;
+    height: 500px;
+}
+.hovedside-box h1, p{
+    text-shadow: 3px 3px 6px #3d566e, -2px -2px 5px #3d566e;
+}
