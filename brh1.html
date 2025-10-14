@@ -6,19 +6,64 @@
 <head>
 </head>
 <body>
-    <img src="Prosjektmedlemmer/Bilder/RBB_Logo.png" style="width:80px; height:100px;"><!--tittel-->
     
-    <button onclick="toggleMeny()">☰ Meny</button><!--knapp når trykkes starter funksjonen til menyen-->
-    
-    <div id="meny" style="display:none;"><!--lager menyen med innhold, og viser ikke innholdet-->
-        <ul>
-            <li><a href="">Hjem</a></li>
-            <li><a href="">Om oss</a></li>
-            <li><a href="">BRH2</a></li>
-            <li><a href="">BRH3</a></li>
-        </ul>
+      <!-- header -->
+     <header>
+    <div class="header-container">
+        <div class="sky"></div>
+        <div class="rain"></div>
+        <img src="Prosjektmedlemmer/Bilder/RBB_Logo.png" style="width:80px; height:100px;"><!--tittel-->
+        <h1>Regnbyen Bergen</h1>
     </div>
-    <h1>Regnbyen Bergen</h1>
+
+    <!-- liste med lenke -->
+    <nav>
+    <ul>
+        <li class="overskrift"><a href="hovedside.html" id="hjem">Hjem</a>
+            <ul>
+                <li><a href="kort-introduksjon.html">Kort introduksjon til RB</a></li>
+                <li><a href="hoydepunkter.html">Høydepunkter</a></li>
+            </ul>
+        </li>
+
+        <li class="overskrift">Om prosjektet
+            <ul>
+                <li><a href="mal.html">Mål</a></li>
+                <li><a href="prosjektbeskrivelse.html">Prosjektbeskrivelse</a></li>
+                <li><a href="bakgrunn.html">Bakgrunn</a></li>
+            </ul>
+        </li>
+
+        <li class="overskrift">Resultat
+            <ul>
+                <li><a href="brh1.html">BRH-1 side</a></li>
+                <li><a href="brh2.html">BRH-2 side</a></li>
+                <li><a href="brh3.html">BRH-3 side</a></li>
+            </ul>
+        </li>
+
+        <li class="overskrift">Kontakt
+            <ul>
+                <li><a href="prosjektmedlemmer.html">Prosjektmedlemmer</a></li>
+                <li><a href="kontaktinformasjon.html">Kontaktinformasjon</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+    <!-- javascript, regn -->
+    <script>
+        const rain = document.querySelector('.header-container .rain');
+        for (let i = 0; i < 80; i++) { // fewe	r drops since only header
+            const drop = document.createElement('div');
+            drop.classList.add('drop');
+            drop.style.left = Math.random() * 100 + '%';
+            drop.style.animationDuration = 0.5 + Math.random() * 0.7 + 's';
+            drop.style.animationDelay = Math.random() * 5 + 's';
+            rain.appendChild(drop);
+        }
+    </script>
+     </header>
     <h2>Kort om hvorfor vi lagde RBB:</h2>    <!--tekst-->
     <p>Bergen er kjent for sitt kystklima og mange regnværsdager, noe som preger både byens identitet og kultur. Prosjektet RBB ble startet for å formidle hvordan man best kan håndtere regn og vær i Bergen. Målet er å gjøre det enklere for folk å holde seg informert om klimaet og å øke kunnskapen om hvordan man kan leve i harmoni med regnet. Nettsiden vår skal samle informasjon om “regnbyen” Bergen og fungere som en nyttig ressurs for både innbyggere og besøkende.</p>
 
@@ -41,12 +86,45 @@
     
 
 
-    <h2>Kontakt oss</h2>    <!--overskrift-->
-    <p><strong>Adresse:</strong> Bergenveien 1, 5555 Bergen</p> <!--strong gir det en tjukk tekst-->
-    <p><strong>Telefon:</strong> +47 10 20 30 40</p>
-    <p><strong>E-post:</strong> <a href="mailto:RBBmail@gmail.com">RBBmail@gmail.com</a></p>    <!--åpner mail for å sende til mailen-->
-    <p><strong>Åpningstider:</strong> Man–Fre: 09:00–17:00</p>
-
+     <footer>
+		<div class="footer">
+			<div class="footer-container">
+				<h3>Om oss</h3>
+				<p>Vi er en gruppe på fem studenter fra Høgskulen på Vestlandet som arbeider med
+					et prosjekt om regnbyen Bergen. Gjennom dette prosjektet utforsker vi hvordan
+					en best kan leve sammen med Bergensværet. Målet vårt er å formidle innsikt i Bergens unike 
+					klima og bidra til økt bevissthet om klimatilpasing i hverdagen.
+				</p>
+			</div>
+			<div class="footer-container">
+				<h3>Les mer</h3>
+				<a href="https://www.yr.no/nb/værvarsel/daglig-tabell/1-92416/Norge/Vestland/Bergen/Bergen">Værvarsel fra Yr</a>
+				<br>
+				<a href="https://www.hvl.no">Høgskulen på vestlandet</a>
+				<br>
+				<a href="https://www.met.no">Metrologisk institutt</a>
+			</div>
+			<div class="footer-container">
+				<h3>Kontakt oss</h3>
+				<p>+47 123 45 678</p>
+				<p>kontakt@RB.no</p>
+				<a href="https://www.google.com/maps/place/Høgskulen+på+Vestlandet/@60.3689504,5.3401345,15z/data=!4m6!3m5!1s0x463cfeace6223393:0x63214955f30aac37!8m2!3d60.3689499!4d5.3500943!16zL20vMGJ2bGpy?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D" 
+				target="_blank" aria-label="Google-maps"> 
+				<i class="fa-solid fa-location-dot"></i> Finn oss på kartet
+				</a>
+			</div>
+			<div class="footer-container">
+				<h3>Følg oss</h3>
+				<a href="https://www.facebook.com/hvl.no/?locale=nb_NO">Facebook</a>
+				<br>
+				<a href="https://www.youtube.com/HøgskulenpåVestlandetHVL">Youtube</a>
+				<br>
+				<a href="https://www.instagram.com/hvl.no/">Instagram</a>
+				<br>
+				<a href="https://www.snapchat.com/@hvl.no">Snapchat</a>
+			</div>
+		</div>
+	</footer>
 <script>
     function toggleMeny() { //funksjonen sitt navn
         const meny = document.getElementById("meny"); //lager en variabel som ikke kan endres senere, som henter meny
